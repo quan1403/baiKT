@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="canh" type="number"> Cạnh
+<button type=button" onclick="ketqua()">kết quả</button>
+<script>
+    function ketqua(){
+        let a = parseInt(document.getElementById("canh").value)
+        let chuvi = a *4;
+        let dientich = a*a;
+        alert(chuvi)
+        alert(dientich)
+
+    }
+
+
+
+
+</script>
+
+</body>
+</html>

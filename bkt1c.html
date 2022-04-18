@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="a" type="number"> A
+<input id="b" type="number"> B
+<button type=button" onclick="ketqua()">kết quả</button></br>
+
+Tổng các số từ a đến b : <p id ="sum"></p>
+
+<script>
+    function ketqua() {
+        let a = document.getElementById("a").value
+        let b = document.getElementById("b").value
+        a = parseFloat(a);
+        b = parseFloat(b);
+        let sum =0;
+        for(let i=a;i<=b;i++){
+            sum = sum+i;
+        }
+        document.getElementById("sum").innerHTML =sum;
+
+
+    }
+</script>
+
+</body>
+</html>
